@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éclat Parisien — L'Esprit de la Mode Française</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #f8f4ed;
+      color: #2e2a26;
+      scroll-behavior: smooth;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 3rem 2rem;
+    }
+    .intro {
+  
+  filter: contrast(1.1) brightness(1.05) saturate(1.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  background-image: url('C:/Users/gupta/Desktop/French PBL/images/Brown and Beige Modern Fashion Collection Presentation[1].png');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* soft golden overlay for readability */
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(50, 30, 0, 0.35); /* warm filter */
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+.intro h1, .intro p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.intro h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 17rem; /* slightly reduced */
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 0.85; /* improved visual balance */
+  transform: scaleY(1.2); /* gentler vertical stretch */
+  transform-origin: center;
+  color: rgba(240, 230, 210, 0.95);
+  margin: 0;
+  z-index: 3;
+  text-transform: none; /* keeps your camel case */
+}
+    .intro p {
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+      color: #5b5047;
+      font-style: italic;
+    }
+    .fashion-intro {
+      background-color: #f6f0e8;
+background-size:contain;
+      color: #3a332c;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .fashion-intro h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .piece {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 5%;
+      min-height: 100vh;
+      border-top: 1px solid #d2c5b5;
+    }
+    .piece:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #f2e9df;
+    }
+    .piece-text {
+      flex: 1;
+      padding: 2rem;
+      max-width: 600px;
+    }
+    .piece-text h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .piece-text p {margin-bottom:1rem; line-height:1.7;}
+    .piece-text span {font-style: italic; color:#5a5044;}
+    .piece-img {flex:1; display:flex; justify-content:center;}
+    .piece-img img {
+      width: 80%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+.pwf {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 5%;
+      min-height: 100vh;
+      border-top: 1px solid #d2c5b5;
+    }
+    footer {
+      background-color: #2e2a26;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    .subinfo strong {display:block; margin-top:0.5rem; color:#3a332c;}
+    @media(max-width:900px){
+      .piece{flex-direction:column;}
+      .piece:nth-child(even){flex-direction:column;}
+      .piece-img img{width:100%; margin-top:2rem;}
+    }
+  </style>
+</head>
+<body>
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Fashion Icons</title>
+
+  <style>
+    /* Style for the top navigation bar */
+   .topbar {
+  background-color: #8B4513; /* brown */
+  overflow: auto;
+  white-space: nowrap;
+  position: fixed;     /* keeps it visible while scrolling */
+  top: 0;              /* sticks to the top */
+  left: 0;
+  width: 100%;         /* full width of the screen */
+  z-index: 1000;       /* ensures it’s above all content */
+}
+
+    /* Style for each navigation link */
+    .topbar a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hover effect */
+    .topbar a:hover {
+      background-color: #A0522D; /* lighter brown */
+    }
+
+    /* Make the page content visible below the bar */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Optional: Add some space and style to main content */
+   .content {
+  padding: 100px 20px 20px; /* space for fixed navbar */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div class="topbar">
+    <a href="#16">16th siècle</a>
+    <a href="#17">17th siècle</a>
+    <a href="#18">18th siècle</a>
+    <a href="#19">19th siècle</a>
+    <a href="#20">20th siècle</a>
+<a href="#21">21st siècle</a>
+<a href="#Paris">La Fashion Week de Paris</a>
+
+
+  </div>
+
+  <!-- Example content below the navigation bar -->
+  <div class="content">
+    <h4>Sélectionnez un style dans la barre de navigation ci-dessus pour découvrir son histoire et son influence.</h4>
+  </div>
+
+
+
+
+<section class="intro">
+    
+  </section>
+
+  <section class="fashion-intro">
+    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Page Background Image</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Full viewport height */
+      background-image: url('images/Cover page.jpg'); /* Replace with your image path */
+      background-size: cover; /* Makes it cover the whole page */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents tiling */
+    }
+  </style>
+
+  
+  <img src="images\Brown and Beige Modern Fashion Collection Presentation.png" alt="L'Essence de la Mode Française">
+
+
+  </section>
+
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3  id="16"> XVI siècle(1501–1600) <br>
+1. Le Bonnet Français (French Hood)</h3>
+   <p><strong>Origine/Époque :</strong> Début du XVIe siècle (Années 1510) - Cour de France.
+</p>
+     <p><strong>Créateur :</strong> Couturiers de la cour royale française.</p>
+<p><strong>Signification :</strong>Un couvre-chef élaboré, porté à l'arrière de la tête. Il était un marqueur de statut social élevé et mettait en valeur la chevelure de manière plus ostentatoire que les coiffes anglaises.
+ </p>
+<p><strong>Rendu Célèbre Par :</strong> Les Reines de France et d'Angleterre, notamment Marie Tudor (Reine de France en 1514).
+</p>
+      <p><strong>Le saviez-vous ?</strong> Contrairement aux coiffures anglaises (Gable Hood) qui encadraient le visage, le Bonnet Français exposait davantage les cheveux, signalant une mode plus libérée.
+</p>
+      <p><strong>Prix :</strong> 700 € - 2 500 €+</p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+            </div>
+    <div class="piece-img"><img src="images\1.jpg" alt="Le Bonnet Français (French Hood)"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3 id="16"> 2. Le Vertugadin Français (Farthingale)</h3>
+      <p><strong>Origine/Époque :</strong> Milieu du XVIe siècle</p>
+     <p><strong>Créateur :</strong> La cour de Catherine de Médicis</p>
+<p><strong>Signification :</strong>Une structure de jupon en forme de cône ou de tambour. Il a créé l'une des silhouettes les plus rigides et artificielles de la mode occidentale, symbolisant la richesse et la maîtrise du corps.
+ </p>
+<p><strong>Rendu Célèbre Par :</strong> La haute noblesse française et espagnole de la Renaissance.
+</p>
+      <p><strong>Le saviez-vous ?</strong>  La forme du vertugadin changea radicalement de la cloche conique espagnole au "vertugadin à tambour" français, plus plat et plus large au niveau des hanches, influençant l'architecture des vêtements royaux.
+</p>
+      <p><strong>Prix :</strong> 400 € - 1 000 €</p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+    </div>
+    <div class="piece-img"><img src="images\2.jpg" alt="Le Vertugadin Français (Farthingale)"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3 id="17">XVII siècle ( 1601–1700)<br>
+3. Le Soulier à Talon Rouge (The Red-Heeled Shoe)
+</h3>
+     <p><strong>Origine/Époque :</strong> Milieu du XVIIe siècle (Années 1660).
+</p>
+     <p><strong>Créateur :</strong>Cordonniers royaux de la cour de Louis XIV</p>
+<p><strong>Signification :</strong>Ce n'était pas seulement une mode, mais un signe de distinction imposé par Louis XIV. Seuls les nobles ayant la faveur du roi étaient autorisés à porter des talons ou des semelles rouges.
+
+ </p>
+<p><strong>Rendu Célèbre Par :</strong>Louis XIV, le Roi-Soleil, et tous les courtisans de Versailles.
+</p>
+      <p><strong>Le saviez-vous ?</strong> Louis XIV, mesurant seulement 1,63 m, utilisait les talons hauts non seulement pour le style, mais aussi pour augmenter sa stature et son autorité.
+</p>
+      <p><strong>Prix :</strong> 800 € - 1 500 €+</p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+    </div>
+    <div class="piece-img"><img src="images\3.jpg" alt="Le Soulier à Talon Rouge (The Red-Heeled Shoe)
+"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3 id="17">4. La Perruque à la Grande Boucle (The Full-Bottomed Wig)
+</h3>
+<p><strong>Origine/Époque :</strong> Milieu du XVIIe siècle.
+</p>
+<p><strong>Créateur :</strong> Perruquiers de cour (notamment Louis XIV) </p>
+<p><strong>Signification :</strong>La perruque complète symbolisait le pouvoir, la richesse et la santé (elle était souvent utilisée pour dissimuler la calvitie ou les problèmes d'hygiène). Elle est devenue un accessoire essentiel de la mode masculine et féminine.
+</p>
+<p><strong>Rendu Célèbre Par :</strong>Louis XIV(qui en a adopté une version célèbre avec des pics élevés) et les aristocrates européens.
+ </p>
+<p><strong>Le Saviez-Vous? </strong> Les perruques étaient si chères qu'elles étaient souvent transmises en héritage. Elles pouvaient être faites de crin de cheval, de poils de chèvre ou de cheveux humains.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong>500 € - 3 000 €+ </p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+          </div>
+    <div class="piece-img"><img src="images\4.jpg" alt="4. La Perruque à la Grande Boucle (The Full-Bottomed Wig)
+"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3 id="18" >XVIII siècle ( 1701–1800)<br>
+5. La Robe à la Française (The Robe à la Française)
+</h3>
+<p><strong>Origine/Époque :</strong>Début et milieu du XVIIIe siècle. </p>
+<p><strong>Créateur :</strong>Les couturiers de la cour de Louis XV </p>
+<p><strong>Signification :</strong> La robe la plus reconnaissable du Rococo. Elle se caractérisait par des plis Watteau(plis lâches allant des épaules au sol) à l'arrière et une jupe large, symbolisant la frivolité et le luxe sans effort de l'aristocratie.
+</p>
+<p><strong>Rendu Célèbre Par :</strong>Madame de Pompadour et l'aristocratie de Versailles.
+ </p>
+<p><strong>Le Saviez-Vous? </strong>Le dos, caractérisé par les plis lâches et non ajustés (sac au dos), contrastait fortement avec le devant, très ajusté par un *corset*, combinant ainsi structure rigide et élégance décontractée.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong> 3 000 € - 10 000 €+</p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+         </div>
+    <div class="piece-img"><img src="images\5.jpg" alt="5. La Robe à la Française (The Robe à la Française)"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3  id="18">6. La Cocarde Tricolore (The Tricolor Cockade)
+</h3>
+<p><strong>Origine/Époque :</strong>Révolution française (Fin du XVIIIe siècle).
+ </p>
+<p><strong>Créateur :</strong> Le Marquis de La Fayette (qui a combiné les couleurs). </p>
+<p><strong>Signification :</strong> Un symbole politique puissant et à la mode, marquant la naissance du drapeau français et représentant l'union du peuple et de la royauté.
+
+</p>
+<p><strong>Rendu Célèbre Par :</strong>Les sans-culottes et les révolutionnaires de 1789.
+ </p>
+<p><strong>Le Saviez-Vous? </strong>Au début de la Révolution, le port de la cocarde était si important que l'oublier pouvait entraîner des soupçons d'être un royaliste et même un danger physique.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong> 20 € - 100 €</p>
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+         </div>
+    <div class="piece-img"><img src="images\6.Tricolour.jpg" alt="6. La Cocarde Tricolore (The Tricolor Cockade)
+"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3   id="19">XIX siècle (1801–1900) <br>
+ 7. Le Béret (The Beret)
+</h3>
+     <p><strong>Origine/Époque :</strong>Historiquement associé à la région basque ; popularisé aux XIXe et XXe siècles.
+ </p>
+<p><strong>Créateur :</strong>Fabricants de la région Basque(patrimoine).
+ </p>
+<p><strong>Signification :</strong>Un symbole international de l'intellectuel français, de l'artiste et du style parisien classique.
+ </p>
+<p><strong>Rendu Célèbre Par :</strong> Les Chasseurs Alpins (unité militaire) et les figures artistiques comme *Pablo Picasso*.
+</p>
+<p><strong>Le Saviez-Vous? </strong>Le béret peut être tricoté à partir d'une seule pièce de laine, ce qui le rend parfaitement imperméable, même lors de fortes pluies.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong>49 € </p>    
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+</div>
+    <div class="piece-img"><img src="images\7.jpg" alt="7. Le Béret (The Beret)">
+</div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3  id="19">8. La Marinière (The Breton Stripe Shirt)
+</h3>
+<p><strong>Origine/Époque :</strong> 1858 (Uniforme de la Marine française).
+</p>
+<p><strong>Créateur :</strong> L'État français (pour l'uniforme).
+ </p>
+<p><strong>Signification :</strong> Est passée d'un incontournable de la Marine à un article de mode décontracté, nautique et chic sans effort. </p>
+<p><strong>Rendu Célèbre Par :</strong>Coco Chanel(qui l'a introduite dans la haute société) et le cinéaste Jean Seberg.
+ </p>
+<p><strong>Le Saviez-Vous? </strong>  L'uniforme original de la Marine comportait 21 rayures précises, représentant chacune une victoire napoléonienne.
+</p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong> 75 € - 95 €</p>
+
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+         </div>
+    <div class="piece-img"><img src="images\8.jpg" alt="8. La Marinière (The Breton Stripe Shirt)"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3  id="20" >XX siècle (1901–2000) <br>
+9. La Petite Robe Noire (The Little Black Dress - LBD)
+</h3>
+<p><strong>Origine/Époque :</strong>  Années 1920.
+</p>
+<p><strong>Créateur :</strong>Popularisée par Coco Chanel
+ </p>
+<p><strong>Signification :</strong>Pièce maîtresse du modernisme, elle a transformé le noir en un symbole de chic, de simplicité, et d'accessibilité universelle.
+ </p>
+<p><strong>Rendu Célèbre Par :</strong> Coco Chanel elle-même et popularisée par Audrey Hepburn (dans Breakfast at Tiffany's)
+</p>
+<p><strong>Le Saviez-Vous? </strong> En 1926, le magazine Vogue a comparé la PRN de Chanel à la Ford Model T, suggérant qu'elle deviendrait l'uniforme de la femme moderne.
+</p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong>400 € - 1 500 €+ </p>
+
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+         </div>
+    <div class="piece-img"><img src="images\9. Black dress.jpg" alt="9. La Petite Robe Noire (The Little Black Dress - LBD)"></div>
+  </section>
+
+  <section class="piece">
+    <div class="piece-text">
+      <h3 id="20" >10. Le Smoking (Tuxedo pour Femmes)
+</h3>
+<p><strong>Origine/Époque :</strong> 1966</p>
+<p><strong>Créateur :</strong>  Créé par Yves Saint Laurent (YSL)</p>
+<p><strong>Signification :</strong>  Le vêtement le plus révolutionnaire du XXe siècle, qui a transposé le smoking pour hommes sur un corps féminin, défiant les normes de genre.
+</p>
+<p><strong>Rendu Célèbre Par :</strong>Catherine Deneuve et les mannequins photographiés par Helmut Newton.
+ </p>
+<p><strong>Le Saviez-Vous? </strong>Au départ, de nombreux restaurants chics interdisaient aux femmes de porter Le Smoking car le pantalon était considéré comme une tenue pour homme.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong>3 500 € - 6 000 €+ </p>
+
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+          </div>
+    <div class="piece-img"><img src="images\10.jpg" alt="10. Le Smoking (Tuxedo pour Femmes)"></div>
+  </section>
+
+ <section class="piece">
+    <div class="piece-text">
+      <h3  id="21">XXI siècle ( 2001–Present)<br>
+11. Le Sac Mini Sculptural (e.g., Jacquemus' Le Chiquito)
+</h3>
+<p><strong>Origine/Époque :</strong>Fin des années 2010 (Depuis 2017) </p>
+<p><strong>Créateur :</strong> Simon Porte Jacquemus</p>
+<p><strong>Signification :</strong> Le sac miniature symbolise le glissement de la mode française de la fonctionnalité à l'esthétisme pur et au statut social numérique.
+</p>
+<p><strong>Rendu Célèbre Par :</strong> Les influenceurs, les célébrités (*Rihanna, **Dua Lipa) et la culture visuelle rapide d'Instagram </p>
+<p><strong>Le Saviez-Vous? </strong>Le Chiquito original est devenu célèbre précisément parce qu'il était délibérément trop petit pour être pratique, faisant de l'objet un accessoire conceptuel.
+ </p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong>250 € - 600 €+ </p>
+
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+          </div>
+    <div class="piece-img"><img src="images\11.jpg" alt="11. Le Sac Mini Sculptural (e.g., Jacquemus' Le Chiquito)"></div>
+  </section>
+
+<section class="piece">
+    <div class="piece-text">
+      <h3  id="21" >12. Le Tailleur-Pantalon Minimaliste (Minimalist Suit)</h3>
+<p><strong>Origine/Époque :</strong> Années 2000 à aujourd'hui</p>
+<p><strong>Créateur :</strong> Phoebe Philo (Céline)* et l'esthétique du luxe tranquille.
+</p>
+<p><strong>Signification :</strong>  Définit la femme moderne réussie : un style caractérisé par une coupe parfaite, des tissus luxueux et l'absence d'ornements tape-à-l'œil, symbolisant le pouvoir intellectuel.
+</p>
+<p><strong>Rendu Célèbre Par :</strong>Les femmes d'affaires parisiennes et les "Philo-philes" (les adeptes de l'esthétique Céline de Philo) </p>
+<p><strong>Le Saviez-Vous? </strong>  L'esthétique de Philo (souvent appelée "Quiet Luxury") mettait souvent l'accent sur les vêtements amples, qui contrastent avec la structure ultra-cintrée de l'ère Dior.
+</p>
+<p><strong>Prix Actuel (Réplique de Corset/Vertugadin) :</strong> 1 500 € - 3 000 €+</p>
+
+<p> 
+  <style>
+    button {
+      background-color: #8B4513; /* brown color */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #A0522D; /* lighter brown when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <button>Buy Now</button>
+</p>
+
+
+          </div>
+    <div class="piece-img"><img src="images\12.jpg" alt="12. Le Tailleur-Pantalon Minimaliste (Minimalist Suit)"></div>
+  </section>
+
+
+
+<section class="piece">
+    <div class="piece-text">
+      <h3  id="Paris" >La Fashion Week de Paris</h3>
+<p>La Fashion Week de Paris, grand final du calendrier mondial de la mode, est réputée pour son mélange d'héritage, d'art et d'innovation avant-gardiste. Organisée deux fois par an, elle présente des collections de haute couture et de prêt-à-porter dans des lieux emblématiques tels que le Louvre, le Grand Palais et même les rues de Paris. Ce qui la distingue, c'est son mélange harmonieux de tradition et de modernité, où des maisons historiques comme Chanel, Dior et Louis Vuitton partagent la scène avec des créateurs audacieux et visionnaires tels que Balmain, Jacquemus et Saint Laurent. Les défilés exclusifs de haute couture, le savoir-faire minutieux et les présentations spectaculaires font de cet événement non seulement une vitrine de la mode, mais aussi un spectacle culturel qui définit les tendances mondiales en matière de style.</p>
+
+
+          </div>
+    <div class="piece-img"><img src="images\Paris fashion week.jpg" alt="La Fashion Week de Paris"></div>
+  </section>
+
+
+
+
+  <footer>© 2025 Éclat Parisien — Tous droits réservés.</footer>
+</body>
+</html>
