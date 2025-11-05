@@ -1,0 +1,171 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #f8f4ed;
+  color: #2e2a26;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+.intro {
+  filter: contrast(1.1) brightness(1.05) saturate(1.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('images/Brown and Beige Modern Fashion Collection Presentation.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* soft golden overlay for readability */
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(50, 30, 0, 0.35); /* warm filter */
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+.intro h1, .intro p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+.intro h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 0.85;
+  transform: scaleY(1.2);
+  transform-origin: center;
+  color: rgba(240, 230, 210, 0.95);
+  margin: 0;
+  z-index: 3;
+}
+.intro p {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: #5b5047;
+  font-style: italic;
+}
+.fashion-intro {
+  background-color: #f6f0e8;
+  background-size: contain;
+  color: #3a332c;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.fashion-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.piece {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  min-height: 100vh;
+  border-top: 1px solid #d2c5b5;
+}
+.piece:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: #f2e9df;
+}
+.piece-text {
+  flex: 1;
+  padding: 2rem;
+  max-width: 600px;
+}
+.piece-text h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.piece-text p {margin-bottom:1rem; line-height:1.7;}
+.piece-text span {font-style: italic; color:#5a5044;}
+.piece-img {flex:1; display:flex; justify-content:center;}
+.piece-img img {
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.pwf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  min-height: 100vh;
+  border-top: 1px solid #d2c5b5;
+}
+footer {
+  background-color: #2e2a26;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.subinfo strong {display:block; margin-top:0.5rem; color:#3a332c;}
+/* Navigation Bar Styles */
+.topbar {
+  background-color: #8B4513; /* brown */
+  overflow: auto;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.topbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+.topbar a:hover {
+  background-color: #A0522D; /* lighter brown */
+}
+/* Page Content Padding (for nav bar) */
+.content {
+  padding: 100px 20px 20px; /* space for fixed navbar */
+}
+button {
+  background-color: #8B4513; /* brown color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5em;
+}
+button:hover {
+  background-color: #A0522D; /* lighter brown when hovered */
+}
+@media(max-width:900px){
+  .piece{flex-direction:column;}
+  .piece:nth-child(even){flex-direction:column;}
+  .piece-img img{width:100%; margin-top:2rem;}
+}
