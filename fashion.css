@@ -27,6 +27,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  image-rendering: auto; /* or "crisp-edges" for pixel art */
+  filter: contrast(1.1) brightness(1.05) saturate(1.1);
 }
 /* soft golden overlay for readability */
 .intro::before {
