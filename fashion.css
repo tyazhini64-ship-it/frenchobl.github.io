@@ -38,38 +38,7 @@ section {
   overflow: hidden;
 }
 
-/* soft golden overlay for readability */
-.intro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(50, 30, 0, 0.35); /* warm filter */
-  backdrop-filter: blur(1px);
-  z-index: 0;
-}
-.intro h1, .intro p {
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
-}
-.intro h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 7rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  line-height: 0.85;
-  transform: scaleY(1.2);
-  transform-origin: center;
-  color: rgba(240, 230, 210, 0.95);
-  margin: 0;
-  z-index: 3;
-}
-.intro p {
-  margin-top: 1.5rem;
-  font-size: 1.3rem;
-  color: #5b5047;
-  font-style: italic;
-}
+
 .fashion-intro {
   background-color: #f6f0e8;
   background-size: contain;
